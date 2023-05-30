@@ -5,7 +5,7 @@
 {% if success %}
 <div class="alert alert-success" role="alert">
     New student added successfully
-    <a href="{% url 'index' %}" class="alert-link">Go to home page.</a>
+    <a href="{% url 'home' %}" class="alert-link">Go to home page.</a>
 </div>
 {% else %}
 <div class="row justify-content-center">
@@ -21,7 +21,7 @@
                     {{ form.as_p }}
 
                     <button type=submit" class="btn btn-primary">Register</button>
-                    <a href="{% url 'index' %}" class="btn btn-secondary">Cancel</a>
+                    <a href="{% url 'home' %}" class="btn btn-secondary">Cancel</a>
                 </form>
             </div>
         </div>
